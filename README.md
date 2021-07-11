@@ -6,7 +6,9 @@ Mass
 2021.7.11
 
 # Links
-https://twitter.com/ffids6　\n
+Twitter
+https://twitter.com/ffids6
+Youtubeチャンネル
 https://www.youtube.com/channel/UCdRXzA95-SbzTzgDKCI7FCg
-
+ブログ
 https://masspc.hatenablog.com/
