@@ -6,6 +6,10 @@ Mass
 2021.7.11
 
 # Links
+
+動物顔テスト
+https://animal-face-ai.netlify.app/
+
 Twitter
 https://twitter.com/ffids6
 
