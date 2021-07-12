@@ -3,54 +3,6 @@ body {
 	background-color: #ffffff;
 }
 
-.file-upload {
-	padding: 15% 3%;
-	margin: 0 auto;
-	border-radius: 10px;
-	border: solid 1.5px #f6f7fa;
-	background-color: #f6f7fa;
-}
-.file-upload-btn {
-	width: 100%;
-	margin: 0;
-	color: #fff;
-	background: #1fb264;
-	border: none;
-	padding: 10px;
-	border-radius: 4px;
-	border-bottom: 4px solid #15824b;
-	transition: all 0.2s ease;
-	outline: none;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.file-upload-btn:hover {
-	background: #1aa059;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
-}
-
-.file-upload-btn:active {
-	border: 0;
-	transition: all 0.2s ease;
-}
-
-.file-upload-content {
-	display: none;
-	text-align: center;
-}
-
-.file-upload-input {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	outline: none;
-	opacity: 0;
-	cursor: pointer;
-}
 
 .image-upload-wrap {
 	width: 60%;
@@ -250,64 +202,20 @@ input#gender {
 	display: none;
 }
 
-body {
-	font-family: Tahoma, sans-serif;
-	background-color: #ffffff;
-	box-sizing: border-box;
-	color: #35465d;
-}
-.file-upload {
-	padding: 15% 3%;
-	margin: 0 auto;
-	border-radius: 10px;
-	border: solid 1.5px #f6f7fa;
-	background-color: #f6f7fa;
-}
-.file-upload-btn {
-	width: 100%;
-	margin: 0;
-	color: #fff;
-	background: #1fb264;
-	border: none;
-	padding: 10px;
-	border-radius: 4px;
-	border-bottom: 4px solid #15824b;
-	transition: all 0.2s ease;
-	outline: none;
-	text-transform: uppercase;
-	font-weight: 700;
+.gender-text{
+	color: #a1c6dd;
+	font-size:2rem;
+	padding-left:1rem;
 }
 
-.file-upload-btn:hover {
-	background: #1aa059;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
+.gender-text2{
+	color: pink;
+	font-size:2rem;
+	padding-right:1rem;
 }
 
-.file-upload-btn:active {
-	border: 0;
-	transition: all 0.2s ease;
-}
 
-.file-upload-content {
-	display: none;
-	text-align: center;
-}
-#loading {
-	display: none;
-}
 
-.file-upload-input {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	outline: none;
-	opacity: 0;
-	cursor: pointer;
-}
 
 .image-upload-wrap {
 	width: 60%;
@@ -396,26 +304,10 @@ body {
 	}
 }
 
-.youtube-link {
-	font-size: 1.5rem;
-	line-height: 1.71;
-	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
-}
 
-.youtube-link:hover {
-	font-size: 1.5rem;
-	line-height: 1.71;
-	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
-}
 
-.youtube-icon {
-	width: 30px;
-	height: 27.262px;
-}
+
+
 
 .upload {
 	width: 20%;
@@ -627,116 +519,14 @@ body {
 	font-size: 1.2rem;
 }
 
-/* gender */
-input#gender {
-	display: none;
-}
 
-label {
-	cursor: pointer;
-	display: inline-block;
-	width: 90px;
-	height: 41px;
-	box-shadow: 0 0 0 8px #e5e9ea inset;
-	border-radius: 30px;
-	position: relative;
-}
 
-.knob {
-	position: absolute;
-	width: 41px;
-	top: 0;
-	left: 0;
-	height: 41px;
-	border-radius: 50%;
-	box-shadow: 0 0 0 8px #f470a7 inset;
-	background-color: #fbd4e6;
-	transition: 0.3s;
-}
 
-.knob > i {
-	position: absolute;
-	width: 4px;
-	height: 18px;
-	top: 100%;
-	background-color: #f470a7;
-	left: calc(50% - 2px);
-}
-
-.knob > i:before,
-.knob > i:after {
-	width: 6px;
-	position: absolute;
-	top: 42%;
-	content: '';
-	height: 4px;
-	background-color: #f470a7;
-}
-
-.knob > i:before {
-	left: 4px;
-}
-.knob > i:after {
-	left: -6px;
-}
-
-input:checked + label > .knob {
-	box-shadow: 0 0 0 8px #a1c6dd inset;
-	background-color: #e2ecf4;
-	transform: translateX(49px) rotate(-140deg);
-}
-
-input:checked + label > .knob > i {
-	background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after,
-input:checked + label > .knob > i:before {
-	background-color: #a1c6dd;
-}
-
-input:checked + label > .knob > i:after {
-	top: 14.5px;
-	width: 12px;
-	left: -7px;
-	transform: rotate(45deg);
-}
-input:checked + label > .knob > i:before {
-	top: 13px;
-	width: 12px;
-	left: 0px;
-	transform: rotate(134deg);
-}
-
-.ad-banner {
-	width: 320px;
-	margin: 0 auto;
-}
-
-.gender-text {
-	margin-top: 0;
-	margin-bottom: 1rem;
-	padding-left: 1rem !important;
-}
-
-.gender-text2 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-	padding-right: 1rem !important;
-}
-
-body {
-	font-family: Tahoma, sans-serif;
-	background-color: #ffffff;
-	box-sizing: border-box;
-	color: #35465d;
-}
 .file-upload {
-	padding: 15% 3%;
 	margin: 0 auto;
 	border-radius: 10px;
-	border: solid 1.5px #f6f7fa;
-	background-color: #f6f7fa;
+	border: solid 1.5px #ffffff;
+	background-color: #ffff;
 }
 .file-upload-btn {
 	width: 100%;
@@ -871,26 +661,8 @@ body {
 	}
 }
 
-.youtube-link {
-	font-size: 1.5rem;
-	line-height: 1.71;
-	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
-}
 
-.youtube-link:hover {
-	font-size: 1.5rem;
-	line-height: 1.71;
-	text-align: center;
-	color: #f73737;
-	text-decoration: underline;
-}
 
-.youtube-icon {
-	width: 30px;
-	height: 27.262px;
-}
 
 .upload {
 	width: 20%;
