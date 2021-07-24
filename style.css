@@ -462,9 +462,7 @@ input#gender {
 	width: 80%;
 	margin: 0 auto;
 }
-.result-message {
-	font-size: 2rem;
-}
+
 
 .animal-explain {
 	font-size: 1.5rem;
@@ -817,9 +815,7 @@ input#gender {
 	width: 80%;
 	margin: 0 auto;
 }
-.result-message {
-	font-size: 2rem;
-}
+
 
 .animal-explain {
 	font-size: 1.5rem;
@@ -973,3 +969,35 @@ input:checked + label > .knob > i:before {
 	text-align: center;
 	color: #35465d;
 }
+
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+	width:8em;
+	height:240px;
+}
+
+.amazon {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.result-explain{
+	font-size: 2rem;
+}
+
+.dog{
+	color: #e56995;	
+}
+
+.result-message {
+	font-size: 3rem;
+}
+
