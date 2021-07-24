@@ -266,36 +266,69 @@
                 const prediction = await model.predict(image, false);
                 prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
                 console.log(prediction[0].className);
-                var resultTitle, resultExplain, resultCeleb;
-                switch (prediction[0].className) {
-                    case 'dog':
-                        resultMesseage = '犬顔';
+                				var resultTitle, resultExplain, resultCeleb, resultMesseage1,resultMesseage2,resultMesseage3,resultMesseage4,resultMesseage5,resultMesseage6,resultMesseage7;
+				switch (prediction[0].className) {
+					case 'dog':
+						resultMesseage1 = '犬顔';
+						break;
+					case 'Cat':
+						resultMesseage2 = '猫顔';
+						break;
+					case 'Rabbit':
+						resultMesseage3 = 'うさぎ顔';
+						break;
+					case 'Dinosour':
+						resultMesseage4 = '恐竜顔';
+						break;
+					case 'Bear':
+						resultMesseage5 = '熊顔';
+						break;
+					case 'Monkey':
+						resultMesseage6 = 'サル顔';
+						break;
+					default:
+						resultMesseage7 =
+							'よくわかりませんでした。もう少し明瞭な写真でもう一度試してみてください。';
+				}
+				$('.result-message').html(resultMesseage1);
+				$('.result-message').html(resultMesseage2);
+				$('.result-message').html(resultMesseage3);
+				$('.result-message').html(resultMesseage4);
+				$('.result-message').html(resultMesseage5);
+				$('.result-message').html(resultMesseage6);
+				$('.result-message').html(resultMesseage7);
+				
+				
+				switch (prediction[0].className) {
+                    case "dog":
+                        resultExplain = "甘くてキュートなあなたは、どんな人からでも好感を持たれるタイプです！ フレンドリーで活気のある性格で、人気度はとても高いです。愛嬌とその明るい笑顔でみんなに愛されています。笑顔が似合い、とても親しみやすいです。また、親しみやすさの中に知的さも感じられます。最もバランスのいい顔と言えるでしょう。"
                         break;
-                    case 'Cat':
-                        resultMesseage = '猫顔';
+                    case "Cat":
+                        resultExplain = "誇らしげで魅力的、一見冷たく見えるかもしれませんが、不思議な魅力があり、いつも周りからの人気を獲得します。 自尊心はとても高いですが、注目を集めるのが好きです。愛嬌をふりまくことが上手で、かわいらしい魅力があります。 また、ツンデレな性格で、恋人にスリルを与え続けます！"
                         break;
-                    case 'Rabbit':
-                        resultMesseage = 'うさぎ顔';
+                    case "Rabbit":
+                        
+                        resultExplain = "無邪気でかわいい、すべての人に喜びをもたらすハッピーウイルスです！ あなたは好奇心旺盛で活動的です。また、キュートでピュアな外見で恋人の保護本能を刺激します。 特別な愛嬌がなくても恋人にとってとても愛らしい存在です。うさぎ顔は、黒目の大きな瞳や丸くて小さな顔、雪のような白い肌などが特徴です。また、童顔なので、実年齢よりもずっと若く見えるのもポイントです。"
                         break;
-                    case 'Dinosour':
-                        resultMesseage = '恐竜顔';
+                    case "Dinosaur":
+                        
+                        resultExplain = "一見、無関心な性格のように見えますが、知り合うととても温かい人であることに周りが気づきます。 シックな魅力があり、なかなか近づきにくいタフな魅力を持っていますが、一度近づくと抜け出せません。"                        
                         break;
-                    case 'Bear':
-                        resultMesseage = '熊顔';
+                    case "Bear":
+                        
+                        resultExplain = "一見怖そうに見えますが、実はすごく可愛いです。 とても気遣いが上手な繊細な性格で、恋人に献身的に尽くし、とても信頼できる人です。 あなたは温かい魅力と高い信頼性を兼ね備えた人です。"
+                        
                         break;
-                    case 'Monkey':
-                        resultMesseage = 'サル顔';
+                    case "Monkey":
+                        
+                        resultExplain = "とても愛嬌のある顔で、多くの人に親しみを感じさせるのが猿顔。その打ち解けやすい雰囲気に心を開く人は多く、異性にモテる猿顔男女は多いのです。笑ったときに歯ぐきが見える口、外側に開いた大きな耳などの特徴を持つ猿顔の人は、タフでがんばり屋で頼りがいがあり、みんな兄貴分・姉貴分的存在としてとても慕われる人気者。モテ度は抜群です。"
+                        
                         break;
                     default:
-                        resultMesseage =
-                            'よくわかりませんでした。もう少し明瞭な写真でもう一度試してみてください。';
+                        resultExplain = ""
+
                 }
-                $('.result-message').html(resultMesseage);
-                // for (let i = 0; i < maxPredictions; i++) {
-                // 	const classPrediction =
-                // 		prediction[i].className + ': ' + prediction[i].probability.toFixed(2);
-                // 	labelContainer.childNodes[i].innerHTML = classPrediction;
-                // }
+				$('.result-explain').html(resultExplain);
             }
         </script>
     </body>
