@@ -9,6 +9,11 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script
+			data-ad-client="ca-pub-8302635560956950"
+			async
+			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+		></script>
 
 		<!-- Bootstrap CSS -->
 		<link
@@ -21,8 +26,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet" />
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8302635560956950"
-     crossorigin="anonymous"></script>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -127,7 +130,13 @@
 				<p class="text-center">AIが写真を分析しています</p>
 			</div>
 			<p class="result-message"></p>
+			<p class="result-message1"></p>
+			<p class="result-message2"></p>
 			<p class="result-message3"></p>
+			<p class="result-message4"></p>
+			<p class="result-message5"></p>
+			<p class="result-message6"></p>
+			<p class="result-message7"></p>
 			<p class="result-explain"></p>
 
 			<div id="label-container" class="d-flex flex-column justify-content-around"></div>
@@ -153,18 +162,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- <p style="padding-top: 2rem; padding-bottom: 1rem; text-align: center;">
-			<iframe
-				src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=294&l=ur1&category=smarthome&banner=1T9HMW8B6090DW49F882&f=ifr&linkID=5f2efcee792d28a96881c12530360573&t=mass23-22&tracking_id=mass23-22"
-				width="320"
-				height="100"
-				scrolling="no"
-				border="0"
-				marginwidth="0"
-				style="border: none;"
-				frameborder="0"
-			></iframe>
-		</p> -->
+
+		<div>
+			<p class="imgcaution">
+				*写真は分析のためだけに使用されます。保存されることはありません。
+			</p>
+		</div>
 		<!-- <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=mass23-22&m=amazon&o=9&p=8&l=as1&IS1=1&detail=1&asins=B0936FGTX5&linkId=95478c0cf7f964a3215ccb812eca66f8&bc1=ffffff&amp;lt1=_top&fc1=424242&lc1=16bf00&bg1=ffffff&f=ifr">
     </iframe> -->
 
@@ -281,7 +284,16 @@
 				const prediction = await model.predict(image, false);
 				prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
 				console.log(prediction[0].className);
-				var resultTitle, resultExplain, resultCeleb, resultMesseage1,resultMesseage2,resultMesseage3,resultMesseage4,resultMesseage5,resultMesseage6,resultMesseage7;
+				var resultTitle,
+					resultExplain,
+					resultCeleb,
+					resultMesseage1,
+					resultMesseage2,
+					resultMesseage3,
+					resultMesseage4,
+					resultMesseage5,
+					resultMesseage6,
+					resultMesseage7;
 				switch (prediction[0].className) {
 					case 'dog':
 						resultMesseage1 = '犬顔';
@@ -305,44 +317,44 @@
 						resultMesseage7 =
 							'よくわかりませんでした。もう少し明瞭な写真でもう一度試してみてください。';
 				}
-				$('.result-message').html(resultMesseage1);
-				$('.result-message').html(resultMesseage2);
-				$('.result-message').html(resultMesseage3);
-				$('.result-message').html(resultMesseage4);
-				$('.result-message').html(resultMesseage5);
-				$('.result-message').html(resultMesseage6);
-				$('.result-message').html(resultMesseage7);
-				
-				
-				switch (prediction[0].className) {
-                    case "dog":
-                        resultExplain = "甘くてキュートなあなたは、どんな人からでも好感を持たれるタイプです！ フレンドリーで活気のある性格で、人気度はとても高いです。愛嬌とその明るい笑顔でみんなに愛されています。笑顔が似合い、とても親しみやすいです。また、親しみやすさの中に知的さも感じられます。最もバランスのいい顔と言えるでしょう。"
-                        break;
-                    case "Cat":
-                        resultExplain = "誇らしげで魅力的、一見冷たく見えるかもしれませんが、不思議な魅力があり、いつも周りからの人気を獲得します。 自尊心はとても高いですが、注目を集めるのが好きです。愛嬌をふりまくことが上手で、かわいらしい魅力があります。 また、ツンデレな性格で、恋人にスリルを与え続けます！"
-                        break;
-                    case "Rabbit":
-                        
-                        resultExplain = "無邪気でかわいい、すべての人に喜びをもたらすハッピーウイルスです！ あなたは好奇心旺盛で活動的です。また、キュートでピュアな外見で恋人の保護本能を刺激します。 特別な愛嬌がなくても恋人にとってとても愛らしい存在です。うさぎ顔は、黒目の大きな瞳や丸くて小さな顔、雪のような白い肌などが特徴です。また、童顔なので、実年齢よりもずっと若く見えるのもポイントです。"
-                        break;
-                    case "Dinosaur":
-                        
-                        resultExplain = "一見、無関心な性格のように見えますが、知り合うととても温かい人であることに周りが気づきます。 シックな魅力があり、なかなか近づきにくいタフな魅力を持っていますが、一度近づくと抜け出せません。"                        
-                        break;
-                    case "Bear":
-                        
-                        resultExplain = "一見怖そうに見えますが、実はすごく可愛いです。 とても気遣いが上手な繊細な性格で、恋人に献身的に尽くし、とても信頼できる人です。 あなたは温かい魅力と高い信頼性を兼ね備えた人です。"
-                        
-                        break;
-                    case "Monkey":
-                        
-                        resultExplain = "とても愛嬌のある顔で、多くの人に親しみを感じさせるのが猿顔。その打ち解けやすい雰囲気に心を開く人は多く、異性にモテる猿顔男女は多いのです。笑ったときに歯ぐきが見える口、外側に開いた大きな耳などの特徴を持つ猿顔の人は、タフでがんばり屋で頼りがいがあり、みんな兄貴分・姉貴分的存在としてとても慕われる人気者。モテ度は抜群です。"
-                        
-                        break;
-                    default:
-                        resultExplain = ""
+				$('.result-message1').html(resultMesseage1);
+				$('.result-message2').html(resultMesseage2);
+				$('.result-message3').html(resultMesseage3);
+				$('.result-message4').html(resultMesseage4);
+				$('.result-message5').html(resultMesseage5);
+				$('.result-message6').html(resultMesseage6);
+				$('.result-message7').html(resultMesseage7);
 
-                }
+				switch (prediction[0].className) {
+					case 'dog':
+						resultExplain =
+							'甘くてキュートなあなたは、どんな人からでも好感を持たれるタイプです！ フレンドリーで活気のある性格で、人気度はとても高いです。愛嬌とその明るい笑顔でみんなに愛されています。笑顔が似合い、とても親しみやすいです。また、親しみやすさの中に知的さも感じられます。最もバランスのいい顔と言えるでしょう。';
+						break;
+					case 'Cat':
+						resultExplain =
+							'猫の様に誇らしげで魅力的があるあなたは、一見冷たく見えるかもしれませんが、不思議な魅力を持っている人で、いつも周りからの人気を得ています。 自尊心はとても高いですが、注目を集めるのが好きです。愛嬌をふりまくことが上手で、かわいらしい魅力があります。 また、ツンデレな性格で、恋人にスリルを与え続けます！';
+						break;
+					case 'Rabbit':
+						resultExplain =
+							'無邪気でかわいいあなたは、すべての人に喜びをもたらすハッピーウイルスです！ あなたは好奇心旺盛で活動的です。また、キュートでピュアな外見で恋人の保護本能を刺激します。 特別な愛嬌がなくても恋人にとってとても愛らしい存在です。うさぎ顔は、黒目の大きな瞳や丸くて小さな顔、雪のような白い肌などが特徴です。また、童顔なので、実年齢よりもずっと若く見えるのもポイントです。';
+						break;
+					case 'Dinosaur':
+						resultExplain =
+							'一見、無関心な性格のように見えますが、知り合うととても温かい人であることに周りが気づきます。 シックな魅力があり、なかなか近づきにくいタフな魅力を持っていますが、一度近づくと抜け出せません。';
+						break;
+					case 'Bear':
+						resultExplain =
+							'一見怖そうに見えますが、実はすごく可愛い人です。とても気遣いが上手な繊細な性格で、恋人に献身的に尽くし、とても信頼できる人です。 あなたは温かい魅力と高い信頼性を兼ね備えた人です。';
+
+						break;
+					case 'Monkey':
+						resultExplain =
+							'とても愛嬌のある顔で、多くの人に親しみを感じさせるのが猿顔。その打ち解けやすい雰囲気に心を開く人は多く、異性にモテる猿顔男女は多いのです。笑ったときに歯ぐきが見える口、外側に開いた大きな耳などの特徴を持つ猿顔の人は、タフでがんばり屋で頼りがいがあり、みんな兄貴分・姉貴分的存在としてとても慕われる人気者。モテ度は抜群です。';
+
+						break;
+					default:
+						resultExplain = '';
+				}
 				$('.result-explain').html(resultExplain);
 				// for (let i = 0; i < maxPredictions; i++) {
 				// 	const classPrediction =

@@ -1,16 +1,5 @@
 body {
-	font-family: Tahoma, sans-serif;
-	background-color: #ffffff;
-}
-
-
-.image-upload-wrap {
-	width: 60%;
-	margin: 0 auto;
-	position: relative;
-	object-fit: contain;
-	border-radius: 10px;
-	border: dashed 1.5px #35465d;
+	font-family: sans-serif;
 	background-color: #ffffff;
 }
 
@@ -18,20 +7,6 @@ body {
 .image-upload-wrap:hover {
 	background-color: #f0ffff;
 	border: 1.5px dashed #ffffff;
-}
-
-.image-title-wrap {
-	padding: 0 15px 15px 15px;
-	color: #222;
-}
-
-.drag-text {
-	text-align: center;
-}
-
-.drag-text h3 {
-	font-weight: 500;
-	text-transform: uppercase;
 }
 
 .file-upload-image {
@@ -54,24 +29,12 @@ body {
 	outline: none;
 }
 
-.remove-image:hover {
-	background: #c13b2a;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
-}
-
-.remove-image:active {
-	border: 0;
-	transition: all 0.2s ease;
-}
-
 .nav-distance {
 	padding: 2.1% 7.7%;
 }
 
 .navbar-light .navbar-brand {
-	font-family: Tahoma, sans-serif;
+	font-family: sans-serif;
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
@@ -96,7 +59,7 @@ body {
 }
 
 .twitter-link {
-	font-family: Tahoma, sans-serif;
+	font-family: sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.71;
 	text-align: center;
@@ -104,7 +67,7 @@ body {
 }
 
 .twitter-link:hover {
-	font-family: Tahoma, sans-serif;
+	font-family: sans-serif;
 	font-size: 1.9m;
 	line-height: 1.71;
 	text-align: center;
@@ -202,29 +165,16 @@ input#gender {
 	display: none;
 }
 
-.gender-text{
+.gender-text {
 	color: #a1c6dd;
-	font-size:2rem;
-	padding-left:1rem;
+	font-size: 2rem;
+	padding-left: 1rem;
 }
 
-.gender-text2{
+.gender-text2 {
 	color: pink;
-	font-size:2rem;
-	padding-right:1rem;
-}
-
-
-
-
-.image-upload-wrap {
-	width: 60%;
-	margin: 0 auto;
-	position: relative;
-	object-fit: contain;
-	border-radius: 10px;
-	border: dashed 1.5px #35465d;
-	background-color: #ffffff;
+	font-size: 2rem;
+	padding-right: 1rem;
 }
 
 .image-dropping,
@@ -233,51 +183,11 @@ input#gender {
 	border: 1.5px dashed #ffffff;
 }
 
-.image-title-wrap {
-	padding: 0 15px 15px 15px;
-	color: #222;
-}
-
-.drag-text {
-	text-align: center;
-}
-
-.drag-text h3 {
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
 .file-upload-image {
 	max-height: 60%;
 	max-width: 60%;
 	margin: auto;
 	padding: 10px;
-}
-
-.try-again-btn {
-	border-radius: 40px;
-	border: solid 1.5px #35465d;
-	background-color: #35465d;
-}
-
-.try-again-text {
-	display: block;
-	font-size: 1.5rem;
-	text-align: center;
-	color: #ffffff;
-	padding: 4px 15px;
-}
-
-.remove-image:hover {
-	background: #c13b2a;
-	color: #ffffff;
-	transition: all 0.2s ease;
-	cursor: pointer;
-}
-
-.remove-image:active {
-	border: 0;
-	transition: all 0.2s ease;
 }
 
 .navbar-light .navbar-brand {
@@ -293,21 +203,6 @@ input#gender {
 .section {
 	margin-top: 50px;
 }
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-	html {
-		font-size: 10px;
-	}
-	.navbar-brand {
-		font-size: 2rem;
-	}
-}
-
-
-
-
-
 
 .upload {
 	width: 20%;
@@ -330,195 +225,10 @@ input#gender {
 .bar-container {
 	height: 2.7rem;
 }
-.dinosaur-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
-}
-.dinosaur-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
-}
-.deer-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
-}
-.deer-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
-}
-.dog-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(27, 175, 234, 0.2);
-}
-.dog-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(27, 175, 234, 1);
-}
-.cat-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(251, 176, 59, 0.2);
-}
-.cat-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(251, 176, 59, 1);
-}
-.bear-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(195, 140, 102, 0.2);
-}
-.bear-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(195, 140, 102, 1);
-}
-.fox-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(49, 132, 155, 0.2);
-}
-.fox-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(49, 132, 155, 1);
-}
-.rabbit-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(235, 166, 190, 0.2);
-}
-.rabbit-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(235, 166, 190, 1);
-}
-.percent-text {
-	font-size: 1rem;
-	color: #ffffff;
-}
-.animal-label {
-	width: 20%;
-	text-align: left;
-	height: 2rem;
-}
 #label-container {
 	width: 80%;
 	margin: 0 auto;
 }
-
-
-.animal-explain {
-	font-size: 1.5rem;
-}
-.dinosaur-animal-title {
-	color: #3ba363;
-}
-.dinosaur-animal-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
-}
-.deer-animal-title {
-	color: #3ba363;
-}
-.deer-animal-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
-}
-.cat-animal-title {
-	color: #ff6c0a;
-}
-.cat-animal-celeb {
-	color: #ff6c0a;
-	font-size: 1.2rem;
-}
-.dog-animal-title {
-	color: #548dd4;
-}
-.dog-animal-celeb {
-	color: #548dd4;
-	font-size: 1.2rem;
-}
-.rabbit-animal-title {
-	color: #e56995;
-}
-.rabbit-animal-celeb {
-	color: #e56995;
-	font-size: 1.2rem;
-}
-.bear-animal-title {
-	color: #9b6b43;
-}
-.bear-animal-celeb {
-	color: #9b6b43;
-	font-size: 1.2rem;
-}
-.fox-animal-title {
-	color: #31849b;
-}
-.fox-animal-celeb {
-	color: #31849b;
-	font-size: 1.2rem;
-}
-
-
-
 
 .file-upload {
 	margin: 0 auto;
@@ -649,19 +359,6 @@ input#gender {
 	margin-top: 50px;
 }
 
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-	html {
-		font-size: 10px;
-	}
-	.navbar-brand {
-		font-size: 2rem;
-	}
-}
-
-
-
-
 .upload {
 	width: 20%;
 }
@@ -678,196 +375,6 @@ input#gender {
 .footer {
 	background-color: initial;
 	color: initial;
-}
-
-.bar-container {
-	height: 2.7rem;
-}
-.dinosaur-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
-}
-.dinosaur-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
-}
-.deer-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(117, 204, 84, 0.2);
-}
-.deer-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(117, 204, 84, 1);
-}
-.dog-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(27, 175, 234, 0.2);
-}
-.dog-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(27, 175, 234, 1);
-}
-.cat-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(251, 176, 59, 0.2);
-}
-.cat-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(251, 176, 59, 1);
-}
-.bear-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(195, 140, 102, 0.2);
-}
-.bear-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(195, 140, 102, 1);
-}
-.fox-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(49, 132, 155, 0.2);
-}
-.fox-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(49, 132, 155, 1);
-}
-.rabbit-box {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	width: 100%;
-	background-color: rgba(235, 166, 190, 0.2);
-}
-.rabbit-bar {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 2rem;
-	border-radius: 10px;
-	background-color: rgba(235, 166, 190, 1);
-}
-.percent-text {
-	font-size: 1rem;
-	color: #ffffff;
-}
-.animal-label {
-	width: 20%;
-	text-align: left;
-	height: 2rem;
-}
-#label-container {
-	width: 80%;
-	margin: 0 auto;
-}
-
-
-.animal-explain {
-	font-size: 1.5rem;
-}
-.dinosaur-animal-title {
-	color: #3ba363;
-}
-.dinosaur-animal-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
-}
-.deer-animal-title {
-	color: #3ba363;
-}
-.deer-animal-celeb {
-	color: #3ba363;
-	font-size: 1.2rem;
-}
-.cat-animal-title {
-	color: #ff6c0a;
-}
-.cat-animal-celeb {
-	color: #ff6c0a;
-	font-size: 1.2rem;
-}
-.dog-animal-title {
-	color: #548dd4;
-}
-.dog-animal-celeb {
-	color: #548dd4;
-	font-size: 1.2rem;
-}
-.rabbit-animal-title {
-	color: #e56995;
-}
-.rabbit-animal-celeb {
-	color: #e56995;
-	font-size: 1.2rem;
-}
-.bear-animal-title {
-	color: #9b6b43;
-}
-.bear-animal-celeb {
-	color: #9b6b43;
-	font-size: 1.2rem;
-}
-.fox-animal-title {
-	color: #31849b;
-}
-.fox-animal-celeb {
-	color: #31849b;
-	font-size: 1.2rem;
 }
 
 /* gender */
@@ -957,25 +464,24 @@ input:checked + label > .knob > i:before {
 }
 
 .title2 {
-	font-family: Tahoma, sans-serif;
+	font-family: sans-serif;
 	line-height: 1.67;
 	text-align: center;
 	color: #35465d;
 }
 
 .subtitle2 {
-	font-family: Tahoma, sans-serif;
+	font-family: sans-serif;
 	line-height: 1.53;
 	text-align: center;
 	color: #35465d;
 }
 
-
 .blocktext {
-    margin-left: auto;
-    margin-right: auto;
-	width:8em;
-	height:240px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8em;
+	height: 240px;
 }
 
 .amazon {
@@ -989,15 +495,55 @@ input:checked + label > .knob > i:before {
 	cursor: pointer;
 }
 
-.result-explain{
-	font-size: 2rem;
-}
-
-.dog{
-	color: #e56995;	
+.result-explain {
+	font-size: 1.5rem;
+	background-color: #f6f7fa;
+	margin: 0px 4rem 0px 4rem;
 }
 
 .result-message {
 	font-size: 3rem;
 }
 
+.result-message1 {
+	font-size: 2.3rem;
+	color: #548dd4;
+	font-weight: bold;
+}
+.result-message2 {
+	font-size: 2.3rem;
+	color: #ffbd4c;
+	font-weight: bold;
+}
+.result-message3 {
+	font-size: 2.3rem;
+	color: pink;
+	font-weight: bold;
+}
+.result-message4 {
+	font-size: 2.3rem;
+	color: #3ba363;
+	font-weight: bold;
+}
+.result-message5 {
+	font-size: 2.3rem;
+	color: #9b6b43;
+	font-weight: bold;
+}
+.result-message6 {
+	font-size: 2.3rem;
+	color: #e56995;
+	font-weight: bold;
+}
+.result-message7 {
+	font-size: 2.3rem;
+	color: #e56995;
+	font-weight: bold;
+}
+
+.imgcaution {
+	font-family: sans-serif;
+	line-height: 1.53;
+	text-align: center;
+	color: #35465d;
+}
